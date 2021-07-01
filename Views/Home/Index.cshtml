@@ -1,0 +1,15 @@
+﻿@model IEnumerable<BigSchool2.Models.Course>
+    @{ 
+        ViewBag.Title = "Home Pase";
+    }
+<div class="row">
+    <ul>
+        @foreach (var course in Model)
+            {
+                <li>
+                    @course.DateTime -@course.Lecturer.Name
+                </li>
+            }
+    </ul>
+
+</div>
